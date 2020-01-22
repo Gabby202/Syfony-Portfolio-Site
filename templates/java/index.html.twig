@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello {{ controller_name }}!{% endblock %}
+
+{% block body %}
+
+    <h1>Java Projects</h1>
+
+    <div class = "jumbotron" style="text-align: center">
+        <h3>Woofr - Geosocial Dog Waking Android App App</h3>
+        <div class = "row">
+            <div class = "col-sm-12">
+                <p>
+                    This app was made by myself and a colleague in our 3rd year of University.
+                    It is android application that allows dog owners to find local dog walkers and vice versa. An owner can request the service of a walker in their area, in situations where they cannot walk their dog themselves. A walker can make themselves available to be requested by a local owner.
+                    This app won us "Best 3rd year project" at a tech seminar. Please see my <a href="{{ url('awards_index') }}">Awards</a> page for details.
+                </p>
+
+            </div>
+        </div>
+            <div class = "row">
+                <div class = "col-sm-6 col-sm-offset-3">
+                    <img src="/images/woofr.PNG" class="img-fluid img-thumbnail" alt="...">
+                    <span style="font-style: italic; display: inline-block; width: 100%; text-align: center">Walker and owner Geo-pairing activities</span>
+                </div>
+                <br>
+
+            </div>
+        <a href="https://github.com/Gabby202/Woofr">Git Repository</a>
+
+    </div>
+
+
+{% endblock %}

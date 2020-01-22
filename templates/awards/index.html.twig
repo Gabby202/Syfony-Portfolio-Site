@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello {{ controller_name }}!{% endblock %}
+
+{% block body %}
+
+    <h1>Awards</h1>
+    <br>
+    <div class="row">
+        <div class="col-sm-4"><img src="/images/recursion.PNG" class="img-fluid img-thumbnail" alt="..."></div>
+        <div class="col-sm-8">
+
+                <p><span class = "p_heading">Best 3rd Year Project - May 2018</span>
+                <br>
+                This app was presented by me and my colleague at the ‘Recursion’ tech seminar held by Liberty Insurance, where it won first place 3rd year project. This seminar is held annually by Liberty Insurance to allow third and fourth year Computer Science students to present their projects. Only A-level projects are forwarded to this award stage, and after a presentation by each candidate, the event runners vote for the most impressive project.        </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-sm-8">
+            <p>
+                The app itself is a Geo-Social Dog walkers app to allow dog owners to request a dog walker for their services. More information about this app can be found on the <a href="{{ url('java_index') }}">Java/Android projects page.</a>
+
+            </p>
+        </div>
+        <div class="col-sm-4"><img src="/images/recursion2.PNG" class="img-fluid img-thumbnail" alt="..."></div>
+
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-4 col-md-offset-4">
+          <a href = "https://twitter.com/TUDUBLINComp/status/997135207068192768" target="_blank">
+            <img src="/images/tweet.PNG" class="img-fluid img-thumbnail" alt="Click to view tweet">
+          </a>
+        </div>
+
+    </div>
+<br>
+
+
+</div>
+
+
+{% endblock %}

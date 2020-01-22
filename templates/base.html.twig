@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+
+        <link rel="stylesheet" href="/css/styles.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="shortcut icon" href="/pizzapunk/TemplateData/favicon.ico">
+        <link rel="stylesheet" href="/pizzapunk/TemplateData/style.css">
+        <script src="/pizzapunk/TemplateData/UnityProgress.js"></script>
+        <script src="/pizzapunk/Build/UnityLoader.js"></script>
+<!--         <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script> -->
+
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="{{ url('main_index') }}">Gabriella Farrell</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="{{ url('main_index') }}">Home</a></li>
+                    <li><a href="{{ url('awards_index') }}">Awards</a></li>
+                    <li><a href="{{ url('java_index') }}">Java/Android</a></li>
+                    <li><a href="{{ url('python_index') }}">Python</a></li>
+                    <li><a href="{{ url('unity_index') }}">Unity/C#</a></li>
+                    <li><a href="{{ url('angular_index') }}">Js/Node/Angular</a></li>
+                    {#<li><a href="{{ url('android_index') }}">Android</a></li>#}
+                    <li><a href="{{ url('c_index') }}">C</a></li>
+                    <li><a href="{{ url('contact_index') }}">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="vertical-center" >
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        {% block body %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+            <div class="row">
+                <hr>
+                <div class="col-sm-12">
+                    <div class="col-md-8">
+                        <a href="{{ url('contact_index') }}">Contact Me</a>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="muted pull-right">Gabriella Farrell BSC (H)</p>
+                    </div>
+                </div>
+            </div>
+
+
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

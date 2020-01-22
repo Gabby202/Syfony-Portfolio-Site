@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello {{ controller_name }}!{% endblock %}
+
+{% block body %}
+    <h1>C Projects</h1>
+
+    <div class = "jumbotron" style="text-align: center">
+        <h3>Parallel Computing - Ebola Simulation & Synchronization</h3>
+        <div class = "row">
+            <div class = "col-sm-12">
+                <p>
+                    The aim of this project was to show the advantages of parallel computing over serial computing.
+                    The project is meant to illustrate the spread of the Ebola virus over Africa,
+                    using the cellular automaton method. The method of the CA is used to describe the state of
+                    entities in the space over time visualization of Ebola virus. The C programming language was used for this, with the Pthread library.
+                    The visualization shown here is written in java.
+                </p>
+
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-sm-6 col-sm-offset-3">
+                <span style="font-style: italic; display: inline-block; width: 100%; text-align: center">Simulation of the spread of ebola using the Celular Automota Method</span>
+            </div>
+            <br>
+
+        </div>
+        <img src="/images/ebola.gif" class="img-fluid img-thumbnail" alt="...">
+
+        <a href="https://media.giphy.com/media/n3SUXcOXlPq3x9CB4o/giphy.gif">Visualisation animated gif</a>
+
+
+
+    </div>
+{% endblock %}

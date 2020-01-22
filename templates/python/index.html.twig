@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello {{ controller_name }}!{% endblock %}
+
+{% block body %}
+<h1>Python Projects</h1>
+
+    <div class = "jumbotron" style="text-align: center" >
+        <h3>Threaded Chat Server</h3>
+
+        <div class = "row">
+            <div class = "col-lg-12">
+                <p>
+                    The objective of this project was understand the functionality of peer-to-peer
+                    networks, and demonstrate this by creating a simple server/client
+                    'group' chat with message hashing, interactive functions and a message buffer.
+                </p>
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "col-sm-6">
+                <img src="/images/tcs2.PNG" class="img-fluid img-thumbnail" alt="...">
+                <span style="font-style: italic; display: inline-block; width: 100%; text-align: center">Client (c.py)</span>
+            </div>
+            <div class = "col-sm-6">
+                <img src="/images/tcs1.PNG" class="img-fluid img-thumbnail" alt="...">
+                <span style="font-style: italic; display: inline-block; width: 100%; text-align: center">Server (s.py)</span>
+            </div>
+            <br>
+            <a href="https://github.com/Gabby202/Python_Chat_Server" target=blank>Git Repository</a>
+
+        </div>
+
+        <hr>
+        <h3>Message Broker System (RabbitMQ, Flask) </h3>
+
+        <div class = "row">
+            <div class = "col-lg-12">
+                <p>
+                    This project demonstrates a simple send/recieve message broker driven system.
+                </p>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-sm-12">
+                <img src="/images/mb.PNG" class="img-fluid img-thumbnail" alt="...">
+                <span style="font-style: italic; display: inline-block; width: 100%; text-align: center">Sender and Reciever. Running RabbiMQ</span>
+            </div>
+            <br>
+            <br>
+            <br>
+            <a href="https://github.com/Gabby202/Python_Chat_Server" target=blank>Git Repository</a>
+
+        </div>
+    </div>
+{% endblock %}

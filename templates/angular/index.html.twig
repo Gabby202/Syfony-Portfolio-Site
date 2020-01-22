@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello {{ controller_name }}!{% endblock %}
+
+{% block body %}
+    <h1>JavaScript/Node/Angular Projects</h1>
+
+    <div class = "jumbotron" style="text-align: center">
+        <h3>Gaze Tracking Thesis Project</h3>
+        <div class = "row">
+            <div class = "col-sm-12">
+                <p>
+                   This research project explored webcam gaze tracking and how it could be utilized as an accessible
+                   tool for video game input. The implementation is demonstrated by developing a Unity WebGL game
+                   named ”Drive-On” that relies on the movement of your head/eyes with no input from your hands. This
+                   game involved the user navigating a race-track by controlling a car with their head tilts. The
+                   foundation of this project involved developing a Javascript API serve head tracking data to a server
+                   deployed by Node.js. This data was then queried by the Unity game aforementioned and
+                   formatted to usable controller code for the unity C# controller script.
+                </p>
+
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-sm-6 col-sm-offset-3">
+                <img src="/images/gaze1.PNG" class="img-fluid img-thumbnail" alt="...">
+                <span style="font-style: italic; display: inline-block; width: 100%; text-align: center">Game Screenshots</span>
+            </div>
+            <br>
+
+        </div>
+
+        <a href="/downloads/thesis.pdf" download>Thesis for this project</a>
+
+    </div>
+
+
+
+    <div class = "jumbotron" style="text-align: center">
+        <h3>Restaurant Finder Rich Web App</h3>
+        <div class = "row">
+            <div class = "col-sm-12">
+                <p>
+                    This is a single page restaurant “finder” application,
+                    which allows users to find restaurants local to them,
+                    by using a series of filtering functions (County, City, cuisine…).
+                    It is built on the Angular 4 framework and is driven by Node.js.
+                </p>
+
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-sm-6 col-sm-offset-3">
+                <img src="/images/angular2.PNG" class="img-fluid img-thumbnail" alt="...">
+                <span style="font-style: italic; display: inline-block; width: 100%; text-align: center">Restaurant Finder App</span>
+            </div>
+            <br>
+
+        </div>
+        <a href="https://github.com/Gabby202/Restaurant_Finder_Angular">Git Repository</a>
+
+
+
+    </div>
+{% endblock %}
